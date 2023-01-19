@@ -44,4 +44,5 @@ Similarly, there must be some bug in the syntax of section 3 of the js script, w
 ## TODO for the Future
 
 1. Finish section 2 of the js: functional past/present/future
+   Done!
 2. Finish section 3 of the js: click events and saving input to local storage

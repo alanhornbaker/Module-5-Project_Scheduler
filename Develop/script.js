@@ -33,11 +33,20 @@ $(function () {
   //   }
 
   //If currentHour > div id, class = "row time-block past"
-  //If currentHour == div id, class = "row time-block present"
+  //If currentHour === div id, class = "row time-block present"
   //if currentHour < div id, class = "row time-block future"
 
-  var divId = $("#div id");
-  // if (currentHour.isEqual(divId)) {
+  var divId = $(".time-block").each(function (index, element) {
+    if (currentHour > parseInt(element.id)) {
+      element.classList = "row time-block past";
+    } else if (currentHour === parseInt(element.id)) {
+      element.classList = "row time-block present";
+    } else {
+      element.classList = "row time-block future";
+    }
+  });
+
+  // if (currentHour.isEqual(Id)) {
   //   set class = "row time-block present";
 
   //// if (currentHour.isGreater(divId)) {
